@@ -385,6 +385,9 @@ header .login-form p a {
   object-fit: cover;
   padding: 2rem 0;
 }
+.swiper-slide:hover img{
+  transform: scale(1.5);
+}
 .swiper-slide h3{
   font-size: 2.7rem;
   color: var(--black);

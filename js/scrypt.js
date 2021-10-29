@@ -92,3 +92,14 @@ var swiper = new Swiper(".mySwiper", {
 // document.querySelector('#search-btn').onclick = () =>{
 //   searchform.classList.toggle('active');
 // }
+
+
+//remove cart item
+var removeCartItemButton = document.getElementsByClassName('fa-trash');
+for (var i = 0; i < removeCartItemButton.length; i++){
+  var button = removeCartItemButton[i];
+  button.addEventListener('click', function(event) {
+    var clickedButton = event.target;
+    clickedButton.parentElement.remove();
+  })
+}
